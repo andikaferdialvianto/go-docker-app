@@ -1,16 +1,76 @@
-# Jenkins CI/CD Deployment untuk Aplikasi Golang 🚀
+# 🚀 Go Docker App
 
-Repository ini berisi konfigurasi untuk membuat pipeline **Jenkins CI/CD** yang secara otomatis melakukan deploy aplikasi **Golang** ke dalam **Docker container**. Dengan pengaturan ini, kita dapat mengotomatiskan seluruh proses build, test, dan deployment.
+A simple web application written in Go, containerized with Docker, and ready for CI/CD deployment with Jenkins!
 
-## Deskripsi Umum 📝
-Repository ini akan:
-1. **Membangun** aplikasi Golang.
-2. **Mendockerisasi** aplikasi tersebut.
-3. **Melakukan deploy** Docker container ke server yang dituju.
-4. Menggunakan **Jenkins** untuk proses Continuous Integration dan Continuous Deployment (CI/CD).
+---
 
-## Persyaratan ⚙️
-- **Jenkins**: Pastikan Jenkins sudah terpasang dan dikonfigurasi pada lingkungan Anda.
-- **Docker**: Docker harus terinstal di server tujuan.
-- **GitHub**: Repository ini berisi kode sumber untuk aplikasi Golang Anda.
-- **SSH Key**: Untuk deployment via SSH, pastikan konfigurasi public key pada server deployment sudah benar.
+## 📦 Features
+
+- ✅ RESTful API with Go
+- 🐳 Dockerized for easy deployment
+- 🔁 Jenkins pipeline support (CI/CD)
+- ☁️ Deploys directly to remote server via SSH
+- 🔐 SSH Key-based secure deployment
+
+---
+
+## 🛠️ Tech Stack
+
+- [Go](https://golang.org/)
+- [Docker](https://www.docker.com/)
+- [Jenkins](https://www.jenkins.io/)
+- Linux-based remote server (Ubuntu / Rocky Linux / AlmaLinux)
+
+---
+
+## 🚧 Folder Structure
+---
+
+## 🚀 Getting Started
+
+### 🔧 Requirements
+
+- Docker installed
+- Go installed
+- Jenkins running
+- SSH access to remote server
+
+### ⚙️ Build & Run Docker Locally
+
+```bash
+docker build -t go-docker-app .
+docker run -p 8080:8080 go-docker-app
+🤖 Jenkins CI/CD Pipeline
+Jenkinsfile includes the following steps:
+
+🧾 Checkout code from GitHub
+
+🐳 Build Docker image
+
+💾 Save and transfer image to remote server
+
+🚀 Deploy Docker container on remote server
+
+💡 Jenkins Setup Tips
+Use "Pipeline from SCM" in Jenkins
+
+Add SSH Credentials via Jenkins > Credentials
+
+Optionally trigger builds automatically on git push
+
+📡 Deployment
+Once Jenkins pipeline completes, your app will be deployed and accessible at:
+
+cpp
+Copy
+Edit
+http://<your-server-ip>:80
+Make sure port 80 is open on your server.
+
+✍️ Author
+Andika Ferdialvianto
+📫 github.com/andikaferdialvianto
+
+📃 License
+This project is licensed under the MIT License.
+See the LICENSE file for details.
