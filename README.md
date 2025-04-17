@@ -24,6 +24,9 @@ A simple web application written in Go, containerized with Docker, and ready for
 ---
 
 ## 🚧 Folder Structure
+## 🚧 Folder Structure
+
+go-docker-app/ ├── main.go # Main Go application ├── Dockerfile # Docker image configuration ├── Jenkinsfile # Jenkins pipeline script └── README.md # Project documentation
 ---
 
 ## 🚀 Getting Started
