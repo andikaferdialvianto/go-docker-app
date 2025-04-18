@@ -70,7 +70,7 @@ Optionally trigger builds automatically on git push
 📡 Deployment
 Once Jenkins pipeline completes, your app will be deployed and accessible at:
 
-http://<your-server-ip>:80
+http://<your-server-ip>:8080
 Make sure port 80 is open on your server.
 
 ✍️ Author
